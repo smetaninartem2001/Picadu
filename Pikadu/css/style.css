@@ -4,6 +4,7 @@
 
 body {
   font-family: sans-serif;
+  background: #e5e5e5;
 }
 
 .header {
@@ -12,6 +13,7 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
 }
 
 .header-wrapper {
@@ -91,4 +93,127 @@ body {
 
 .search-input::placeholder {
   color: #bfbfbf;
+}
+
+.content {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.posts {
+  max-width: 800px;
+}
+
+.post {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.post-body {
+  padding-top: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 0px;
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 19px;
+  /* Bold / 16px | 24px */
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.post-text {
+  /* Grey / grey-9 */
+  color: #262626;
+  /* Regular / 14px | 22px */
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.tegs {
+  margin-bottom: 22px;
+}
+
+.teg {
+  /* Grey / grey-6 */
+  color: #bfbfbf;
+  /* Regular / 14px | 22px */
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  /* Grey / grey-2 */
+  background: #fafafa;
+  /* Grey / grey-4 */
+  border-top: 1px solid #e8e8e8;
+}
+
+.post-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.post-button .icon {
+  fill: #8c8c8c;
+}
+
+.icon-like,
+.icon-comment {
+  margin-right: 6px;
+}
+
+.post-button {
+  background: transparent;
+  border: none;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+  /* Regular / 14px | 22px */
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.author-avatar {
+  width: 34px;
+  height: 34px;
+  margin-left: 9px;
+  border-radius: 4px;
+}
+
+.author-username {
+  display: block;
+  color: #8c8c8c;
+  /* Regular / 12px | 20px */
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.post-time {
+  color: #bfbfbf;
+  /* Regular / 12px | 20px */
+  font-size: 12px;
+  line-height: 20px;
 }
