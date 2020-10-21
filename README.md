@@ -7,4 +7,7 @@
 
 Ссылка: [Дизайн-макет](https://www.figma.com/file/inz2zdmJLAwM7HXqPf25F4/Pikadu)
 
+Демонстрация из [Дизайн-макета](https://www.figma.com/file/inz2zdmJLAwM7HXqPf25F4/Pikadu)
+![Демонстрация домашней страницы](https://drive.google.com/file/d/1GVZ4YJfV4r3lX2mDEG4a05ar2cJPF__M/view?usp=sharing "Демонстрация домашней страницы")
+
 ## `GitHub Pages`
