@@ -1,5 +1,5 @@
 # Интенсив по вёрстке | Picadu
-Разработка сайта на **`HTML`, `CSS`, `JS`** в рамках бесплатного интенсива **Glo Academy**
+Разработка сайта на **`HTML`, `CSS`, `JS`** в рамках бесплатного интенсива **Glo Academy**.
 Реализуем портал со статьями от пользователей и с комментариями.
 
 ## Дизайн-макет в `Figma`
@@ -7,7 +7,11 @@
 
 Ссылка: [Дизайн-макет](https://www.figma.com/file/inz2zdmJLAwM7HXqPf25F4/Pikadu)
 
-Демонстрация из [Дизайн-макета](https://www.figma.com/file/inz2zdmJLAwM7HXqPf25F4/Pikadu)
-![Демонстрация домашней страницы](https://drive.google.com/file/d/1GVZ4YJfV4r3lX2mDEG4a05ar2cJPF__M/view?usp=sharing "Демонстрация домашней страницы")
-
 ## `GitHub Pages`
+
+
+## `Контакты`
+
+Мой [**`Facebook`**](https://www.facebook.com/profile.php?id=100056203089338) всегда открыт и там всегда есть информация о моих последних проектах или активностях в IT сфере.
+
+По другим вопросам можешь написать на почту **`p_a.o.anpilogov@mpt.ru`**
