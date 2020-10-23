@@ -1,9 +1,25 @@
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: local("SFProDisplay-Regular"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+    url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  src: local("SFProDisplay-Semibold"),
+    url("../fonts/SFProDisplay-Semibold.woff") format("woff"),
+    url("../fonts/SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "SFProDisplay-Regular", sans-serif;
   background: #e5e5e5;
 }
 
@@ -48,7 +64,8 @@ body {
 }
 
 .input-group {
-  width: 237px;
+  max-width: 237px;
+  width: 55%;
   height: 32px;
   position: relative;
   background: white;
@@ -95,6 +112,10 @@ body {
   color: #bfbfbf;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .content {
   max-width: 1200px;
   width: 90%;
@@ -122,6 +143,7 @@ body {
 }
 
 .post-title {
+  font-family: "SFProDisplay-Semibold", sans-serif;
   margin-top: 0;
   margin-bottom: 19px;
   /* Bold / 16px | 24px */
@@ -221,10 +243,6 @@ body {
   line-height: 20px;
 }
 
-.sidebar {
-  width: 31%;
-}
-
 .user {
   background-color: #fafafa;
   border: 1px solid #e8e8e8;
@@ -247,8 +265,7 @@ body {
 
 .user-name {
   /* Semibold / 16 px | 24 px */
-  font-style: normal;
-  font-weight: 600;
+  font-family: "SFProDisplay-Semibold", sans-serif;
   font-size: 16px;
   line-height: 24px;
   /* Grey / grey-8 */
@@ -259,6 +276,17 @@ body {
   width: 20px;
   height: 20px;
   fill: #000000;
+}
+
+.icon-video,
+.icon-photo {
+  width: 14px;
+  height: 11px;
+  fill: #ffc53d;
+}
+
+.sidebar {
+  width: 31%;
 }
 
 .sidebar-nav {
@@ -277,8 +305,7 @@ body {
   width: 100%;
   text-decoration: none;
   /* Semibold / 14 px | 22 px */
-  font-style: normal;
-  font-weight: normal;
+  font-family: "SFProDisplay-Semibold", sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: #595959;
@@ -307,6 +334,18 @@ body {
   font-size: 16px;
   line-height: 24px;
   padding: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-outline {
+  background: #fff;
+  border: 1px solid #ffc53d;
+  border-radius: 4px;
+  color: #ffc53d;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
 }
 
 .button-new-post {
@@ -342,8 +381,7 @@ body {
 
 .card-title {
   /* Semibold / 16 px | 24 px */
-  font-style: normal;
-  font-weight: 600;
+  font-family: "SFProDisplay-Semibold", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #595959;
@@ -357,8 +395,7 @@ body {
   margin: 0;
   text-decoration: none;
   /* Semibold / 16 px | 24 px */
-  font-style: normal;
-  font-weight: 600;
+  font-family: "SFProDisplay-Semibold", sans-serif;
   font-size: 16px;
   line-height: 24px;
   /* Calendula Gold / gold-7 */
@@ -404,4 +441,133 @@ body {
   /* identical to box height, or 167% */
   text-align: center;
   color: #fff;
+}
+
+.add-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-title,
+.add-text {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 23px 30px;
+  margin-bottom: 16px;
+}
+
+.add-text {
+  min-height: 362px;
+}
+
+.add-button {
+  width: 100%;
+  max-width: 370px;
+  margin-right: 2%;
+}
+
+.add-post .button-outline {
+  margin-right: 1%;
+}
+
+@media (max-width: 990px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    margin-left: 12px;
+  }
+
+  .menu-toggle span {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 94px;
+    margin-bottom: 16px;
+  }
+
+  .sidebar {
+    position: fixed;
+    z-index: 101;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-width: 320px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    overflow: auto;
+  }
+
+  .sidebar.visible {
+    transform: translateX(0);
+  }
+
+  .posts {
+    width: 100%;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-menu {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 676px) {
+  .add-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-button {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .add-post .button-outline {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-footer {
+    flex-direction: column;
+  }
+
+  .post-author {
+    margin-top: 15px;
+  }
+
+  .author-about {
+    order: 2;
+    text-align: left;
+  }
+
+  .author-avatar {
+    margin-left: 0;
+    margin-right: 10px;
+  }
 }

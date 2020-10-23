@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pikadu</title>
+    <title>Pikadu - главная</title>
     <!-- Подключение библиотеки стилей normalize.css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Подключение библиотеки стилей style.css -->
@@ -13,7 +13,7 @@
     <!-- Реализация шапки сайта -->
     <header class="header">
       <div class="header-wrapper">
-        <a href="/" class="header-logo">
+        <a href="index.html" class="header-logo">
           <img
             class="header-logo-image"
             src="img/logo.svg"
@@ -49,6 +49,11 @@
           <!-- /.search-button -->
         </div>
         <!-- /.input-group -->
+        <a href="#" class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
       <!-- /.header-wrapper -->
     </header>
@@ -245,7 +250,7 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="button button-new-post">
+        <a href="new-post.html" class="button button-new-post">
           <svg class="icon icon-fire">
             <use xlink:href="img/icons.svg#Fire"></use>
           </svg>
@@ -276,5 +281,6 @@
       <!-- /.sidebar -->
     </div>
     <!-- /.content -->
+    <script src="js/main.js"></script>
   </body>
 </html>
