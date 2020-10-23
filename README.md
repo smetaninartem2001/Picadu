@@ -9,6 +9,9 @@
 
 ## `GitHub Pages`
 
+[**`Последняя версия сайта`**](https://smetaninartem2001.github.io/Picadu/index.html) размещённая на GitHub, которую можно просмотреть со стороны пользователя, а не разработчика.
+
+Ссылка: https://smetaninartem2001.github.io/Picadu/index.html (если не работает текстовая)
 
 ____
 ## `Контакты`
